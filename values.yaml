@@ -1,6 +1,6 @@
 openvpn:
-  persistence:
-    enabled: true
+  # persistence:
+  #   enabled: true
   openvpn:
     conf: |
       cipher AES-256-CBC
