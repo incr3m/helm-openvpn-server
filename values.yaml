@@ -1,0 +1,6 @@
+openvpn:
+  persistence:
+    enabled: true
+  openvpn:
+    conf: |
+      cipher AES-256-CBC

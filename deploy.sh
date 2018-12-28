@@ -1,5 +1,2 @@
-kubectl create -f rbac-config.yaml
-
-helm init --service-account tiller
-
-helm install --name openvpn-server stable/openvpn
+# helm repo add stable http://storage.googleapis.com/kubernetes-charts
+helm upgrade --install openvpn-server .

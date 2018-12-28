@@ -17,3 +17,4 @@ echo $SERVICE_IP
 echo $POD_NAME
 kubectl -n "$NAMESPACE" exec -it "$POD_NAME" //etc/openvpn/setup/newClientCert.sh "$KEY_NAME" "$SERVICE_IP"
 kubectl -n "$NAMESPACE" exec -it "$POD_NAME" cat //etc/openvpn/certs/pki/$KEY_NAME.ovpn > "$KEY_NAME.ovpn"
+echo "cipher AES-256-CBC" >> "$KEY_NAME.ovpn"
